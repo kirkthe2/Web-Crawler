@@ -25,12 +25,3 @@ for item in soup.find_all("a",{"class":"thumb"}, limit=10):
 		img.save("./scraped_images/" + title, img.format)
 	except:
 		pass
-print("Downloading Images")
-
-#for i in range(0,10):
-#	try:
-#		wget.download(list_of_images[i])
-#	except:
-#		pass
-
-#print("Download Done")
